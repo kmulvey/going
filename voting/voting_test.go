@@ -11,7 +11,7 @@ func TestVoteOne(t *testing.T) {
 	votes := [4]string{"Jun", "Chihiro", "Toshi", "Toshi"}
 	assert.Equal(t, "Toshi", tally(names[:], votes[:]), "Toshi should win")
 }
-func TestCalcTwo(t *testing.T) {
+func TestVoteTwo(t *testing.T) {
 	names := [4]string{"Toshi", "Jun", "Teru", "Chihiro"}
 	votes := [4]string{"Teru", "Teru", "Jun", "Jun"}
 	assert.Equal(t, "", tally(names[:], votes[:]), "they should be equal")
