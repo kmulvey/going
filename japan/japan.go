@@ -11,7 +11,6 @@ func calc(places []int) int {
 
 	for i := 1; i < len(places); i++ {
 		if places[i] > places[i-1] {
-			fmt.Println("decreace from ", places[i], " to ", places[i-1])
 			//calc the diff
 			total += places[i] - places[i-1]
 			// reset the val
