@@ -1,12 +1,12 @@
-package main
+package japan
 
 import "fmt"
 
 func main() {
-	//places := [5]int{30, 20, 20, 10}
-	//places := [3]int{5, 7, 3}
-	places := [9]int{6, 8, 5, 4, 7, 4, 2, 3, 1}
-
+	places := [5]int{30, 20, 20, 10}
+	fmt.Println("Total: ", calc(places[:]))
+}
+func calc(places []int) int {
 	total := 0
 
 	for i := 1; i < len(places); i++ {
@@ -15,5 +15,6 @@ func main() {
 			total += places[i] - places[i-1]
 		}
 	}
-	fmt.Println("Total: ", total)
+
+	return total
 }
